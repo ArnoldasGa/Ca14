@@ -1,0 +1,126 @@
+body {
+    background: #eee;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    height: 100vh;
+    display:flex;
+    flex-direction:column; 
+}
+
+header {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    height: 75px;
+    width: auto;
+}
+
+header div {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 1px 1px #888888;
+    margin: 10px 5px;
+}
+
+nav a {
+    box-shadow: 1px 1px #888888;
+    padding: 15px 10px;
+    font-size: 20px;
+}
+
+nav :nth-child(1) {
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0px 1px #888888;
+}
+
+nav :nth-last-child(1) {
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0px 0px #888888;
+}
+
+.acc :nth-child(2) {
+    display: none;
+}
+
+.login {
+    padding: 20px;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px #888888;
+    margin: 10px 5px;
+}
+
+.contant {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    box-shadow: 1px 1px #888888;
+    margin: 10px 5px;
+}
+
+.contant :nth-child(1) {
+    padding: 20px 0px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+footer {
+    margin-top: auto;
+    padding: 30px;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        margin: 0 5%;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+
+    nav :nth-child(n+1) {
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .main {
+        display: flex;
+        width: 100%;
+    }
+
+    .acc {
+        flex-basis: 15%;
+    }
+
+    .acc :nth-child(2) {
+        text-align: center;
+        font-weight: bold;
+        display: flex;
+        padding: 50px 15px;
+        font-size: 25px;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 1px 1px #888888;
+        margin: 10px 5px;
+    }
+
+    .contant {
+        flex-basis: 85%;
+    }
+}
